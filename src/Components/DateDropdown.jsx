@@ -19,7 +19,7 @@ const DateDropdown = ({
         aria-haspopup="listbox"
         aria-label={`Toggle dropdown for ${selectedDate}`} >
         <span>{formatDate(selectedDate)}</span>
-        <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${ isDropdownOpen ? "transform rotate-180" : "" }`} />
+        <ChevronDown className={`w-5 h-5 transition-transform duration-200 text-blue-600 ${ isDropdownOpen ? "transform rotate-180" : "" }`} />
       </button>
       {isDropdownOpen && (
         <div className="flex justify-center bg-white rounded-xl w-full">
